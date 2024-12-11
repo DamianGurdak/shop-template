@@ -1,0 +1,12 @@
+ /* Global */
+
+ /* Carousel */
+
+ .carousel-inner, .carousel-item {
+  height: 100vh;
+ }
+
+ .carousel-item img {
+  height: 100%;
+  object-fit: cover;
+ }
