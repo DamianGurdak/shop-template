@@ -1,7 +1,16 @@
 /* Global */
 
-/* Carousel */
+/* Navigation */
+.navigation {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 
+.navigation button i {
+  padding-right: 5px;
+}
+
+/* Carousel */
 .carousel-inner,
 .carousel-item {
   height: 100vh;
@@ -10,6 +19,25 @@
 .carousel-item img {
   height: 100%;
   object-fit: cover;
+}
+
+.carousel-caption {
+  right: auto;
+  bottom: auto;
+  padding-top: 0;
+  padding-bottom: 0;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.carousel-caption h4 {
+  font-size: 15px;
+}
+
+.carousel-caption h3 {
+  font-size: 50px;
+  padding-bottom: 20px;
 }
 
 /* Section products */
@@ -22,7 +50,21 @@
 
 /* Section gallery */
 
+.gallery h3 {
+  font-size: 50px;
+  color: white;
+  padding-bottom: 15px;
+}
+
+.gallery .card-body {
+  text-align: center;
+}
+
 /* Section info */
+
+.info i {
+  font-size: 20px;
+}
 
 /* Section contact us */
 
@@ -30,4 +72,83 @@
   background-color: #eff2f5;
 }
 
+.contact-box {
+  background-color: #eff2f5;
+  border: none;
+  margin-right: 60px;
+}
+
+.contact-icons {
+  display: inline;
+}
+
+.contact-icons a {
+  color: black;
+  padding-right: 0;
+}
+
+.contact-box-2 p,
+a {
+  margin-bottom: 0;
+}
+
+.contact button {
+  max-width: 100px;
+}
+
+.contact span {
+  font-size: 10px;
+  color: gray;
+}
+
 /* Footer */
+.footer {
+  background-color: lightgray;
+}
+
+.footer a {
+  padding: 0 10px;
+}
+
+/* --------- Media ---------  */
+
+// Mobile
+@media (max-width: 767px) {
+  /* Section products */
+  .products-boxes {
+    padding-top: 40px;
+  }
+
+  .product-box {
+    padding-top: 20px;
+  }
+
+  /* Section contact */
+  .contact {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .contact-box {
+    margin-bottom: 50px;
+  }
+
+  /* Footer */
+  // .footer-icons {
+  //   display: flex;
+  //   flex-direction: column;
+  //   text-align: center;
+  // }
+}
+
+// Tablet
+// @media (min-width: 768px) and (max-width: 991px) {
+//   /* Global */
+// }
+
+@media (min-width: 992px) {
+  /* Section contact */
+  .contact-box {
+    padding-left: 60px;
+  }
+}
